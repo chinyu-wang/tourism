@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>台灣、日本與越南2014-2019入境觀光客比較</title>
+
+	<style type="text/css">
+		
+		.highcharts-figure, .highcharts-data-table table {
+		  min-width: 360px; 
+		  max-width: 800px;
+		  margin: 1em auto;
+		}
+
+		.highcharts-data-table table {
+			font-family: Verdana, sans-serif;
+			border-collapse: collapse;
+			border: 1px solid #EBEBEB;
+			margin: 10px auto;
+			text-align: center;
+			width: 100%;
+			max-width: 500px;
+		}
+		.highcharts-data-table caption {
+		  padding: 1em 0;
+		  font-size: 1.2em;
+		  color: #555;
+		}
+		.highcharts-data-table th {
+			font-weight: 600;
+		  padding: 0.5em;
+		}
+		.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+		  padding: 0.5em;
+		}
+		.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+		  background: #f8f8f8;
+		}
+		.highcharts-data-table tr:hover {
+		  background: #f1f7ff;
+		}
+	</style>
+
+
+</head>
+
+<body>
+		
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/series-label.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+	<figure class="highcharts-figure">
+	  <div id="container"></div>
+	  <p class="highcharts-description">
+	    台灣入境旅客在過去六年(2014-1019)呈現緩慢成長驅勢。<br>
+	    日本的成長幅度為三國之中最高。<br>
+	    越南在2016開始大幅成長，並在2017年超越台灣。<br>    
+	  </p>
+	</figure>
+
+
+	<script type="text/javascript">
+		
+		Highcharts.chart('container', {
+
+		  title: {
+		    text: '台灣、日本與越南2014-2019入境觀光客比較'
+		  },
+
+		  subtitle: {
+		    text: '資料來源: https://www.unwto.org/country-profile-inbound-tourism'
+		  },
+
+		  yAxis: {
+		    title: {
+		      text: '入境觀光客人數(單位:百萬)'
+		    }
+		  },
+
+		  xAxis: {
+		    accessibility: {
+		      rangeDescription: '資料區間: 2014年至2019年'
+		    }
+		  },
+
+		  legend: {
+		    layout: 'vertical',
+		    align: 'right',
+		    verticalAlign: 'middle'
+		  },
+
+		  plotOptions: {
+		    series: {
+		      label: {
+		        connectorAllowed: false
+		      },
+		      pointStart: 2014
+		    }
+		  },
+
+		  series: [{
+		    name: '台灣',
+		    data: [9.9,	10.4,	10.7,	10.7,	11.1,	11.9]
+		  }, {
+		    name: '日本',
+		    data: [13.4,	19.7,	24,	28.7,	31.2,	32.2]
+		  }, {
+		    name: '越南',
+		    data: [8,7.9,10,12.9,15.5,18]
+		  }],
+
+		  responsive: {
+		    rules: [{
+		      condition: {
+		        maxWidth: 500
+		      },
+		      chartOptions: {
+		        legend: {
+		          layout: 'horizontal',
+		          align: 'center',
+		          verticalAlign: 'bottom'
+		        }
+		      }
+		    }]
+		  }
+
+		});
+
+	</script>
+
+<center>
+<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww1.pu.edu.tw%2F~wang%2Ftourist.html&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</center>
+
+
+</body>
+</html>
